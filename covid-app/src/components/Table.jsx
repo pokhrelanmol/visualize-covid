@@ -1,15 +1,12 @@
+import React,{useContext} from 'react'
 import axios from 'axios'
-import React from 'react'
+import {TableContext} from '../context/tableContext'
+
 
 const Table = () => {
-      const countryWiseApiData = async()=>{
-            const res = await axios.get(" https://covid19.mathdro.id/api")
-            console.log(res)
-      }
-      countryWiseApiData()
+     const data = useContext(TableContext) 
       return (
             <div>
-                 tabke 
             </div>
       )
 }

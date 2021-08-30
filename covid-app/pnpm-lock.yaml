@@ -7,6 +7,7 @@ specifiers:
   '@testing-library/user-event': ^12.8.3
   autoprefixer: ^9.8.6
   axios: ^0.21.1
+  dayjs: ^1.10.6
   postcss: ^7.0.36
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -20,6 +21,7 @@ dependencies:
   '@testing-library/react': 11.2.7_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 12.8.3
   axios: 0.21.1
+  dayjs: 1.10.6
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-scripts: 4.0.3_react@17.0.2
@@ -4340,6 +4342,10 @@ packages:
       abab: 2.0.5
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
+    dev: false
+
+  /dayjs/1.10.6:
+    resolution: {integrity: sha512-AztC/IOW4L1Q41A86phW5Thhcrco3xuAA+YX/BLpLWWjRcTj5TOt/QImBLmCKlrF7u7k47arTnOyL6GnbG8Hvw==}
     dev: false
 
   /debug/2.6.9:
