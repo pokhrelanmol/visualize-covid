@@ -2,11 +2,9 @@ import React, { createContext, useEffect, useState } from "react";
 
 export const TableContext = createContext("");
 export const TableContextProvider = ({ children }) => {
-  const [data, setData] = useState("");
-  console.log(data ? data : "loading....");
-
+  const [countriesData, setCountriesData] = useState("");
   return (
-    <TableContext.Provider value={{ data, setData }}>
+    <TableContext.Provider value={{ countriesData, setCountriesData }}>
       {children}
     </TableContext.Provider>
   );
