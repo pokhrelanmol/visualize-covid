@@ -11,7 +11,10 @@ module.exports = {
   },
   variants: {
     extend: {
+      transform: ["hover", "focus"],
+      scale: ["active", "group-hover"],
       tableLayout: ["hover", "focus"],
+      zIndex: ["hover", "active"],
     },
   },
   plugins: [],

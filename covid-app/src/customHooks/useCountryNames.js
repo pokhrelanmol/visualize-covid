@@ -18,7 +18,7 @@ const useCountryNames = () => {
       }
     };
     getCountryName();
-  }, []);
+  }, [countries]);
   return { countries };
 };
 export default useCountryNames;
