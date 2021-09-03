@@ -20,10 +20,10 @@ const Table = ({ countriesData, setNumberOfData, numberOfData }) => {
   return (
     <div className="p-20 w-full">
       <Search />
-      <table className="flex  flex-col items-center h-96 mx-auto   border-black border bg-gray-200 overflow-y-scroll overflow-x-scroll ">
+      <table className="flex flex-col items-center h-96 mx-auto   border-black border bg-gray-200 overflow-y-scroll   overflow-scroll ">
         <thead className="w-full">
           <tr className=" text-white  flex justify-around items-center w-full  bg-black border-b border-gray-600 uppercase ">
-            <th className=" ">Country</th>
+            <th className="">Country</th>
             <th className=" ">Confirmed</th>
             <th className=" ">Deaths</th>
             <th className="">Recovered</th>
