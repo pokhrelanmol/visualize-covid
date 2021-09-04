@@ -5,16 +5,25 @@ import Chart from "./components/india/Chart";
 import Precautions from "./components/Precautions";
 import Table from "./components/Table";
 import { TableContextProvider } from "./context/tableContext";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Map from "./map/Map";
 function App() {
   return (
     <div>
       <TableContextProvider>
-        {/* <Nav />
-        <CardData />
-        <Precautions /> */}
-        {/* <Chart /> */}
-        <Map />
+        <BrowserRouter>
+          <Nav />
+          <Switch>
+            <Route exact path="/">
+              <CardData />
+              <Precautions />
+            </Route>
+
+            {/* <Route exact path="/" /> */}
+            <Route exact path="/map" component={Map} />
+            <Route exact path="/india" component={Chart} />
+          </Switch>
+        </BrowserRouter>
       </TableContextProvider>
     </div>
   );

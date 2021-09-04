@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.map-cards {
+  width: 2rem;
+  height: 2rem;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0.1px;
+}
+.map-cards:hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 8rem;
+  background-color: blanchedalmond;
+  border-radius: 10%;
+  height: 5rem;
+  font-size: 12px;
+  z-index: 10;
+}
