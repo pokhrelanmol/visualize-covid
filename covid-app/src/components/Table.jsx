@@ -11,14 +11,13 @@ dayjs.extend(relativePlugin);
 
 const Table = ({ countriesData, setNumberOfData, numberOfData }) => {
   const { _countriesData } = useContext(TableContext);
-  console.log(_countriesData);
   useEffect(() => {}, [countriesData, numberOfData]);
   const handleLoadMore = () => {
     setNumberOfData(numberOfData + 15);
   };
 
   return (
-    <div className="p-20 w-full">
+    <div className="p-5 w-full">
       <Search />
       <table className="flex flex-col items-center h-96 mx-auto   border-black border bg-gray-200 overflow-y-scroll   overflow-scroll ">
         <thead className="w-full">

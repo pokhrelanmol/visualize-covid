@@ -16,7 +16,6 @@ const useChartData = () => {
         deaths: await response.data.deaths.value,
         recovered: await response.data.recovered.value,
       });
-      console.log(data);
     };
     grossData();
   }, []);

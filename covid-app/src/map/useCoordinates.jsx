@@ -4,7 +4,6 @@ import axios from "axios";
 const useCoordinates = () => {
   const { countries } = useCountryNames();
   const [latLong, setLatLong] = useState();
-  console.log(countries);
   const formatData = (data) => {
     const formattedData = {
       lat: data.lat,

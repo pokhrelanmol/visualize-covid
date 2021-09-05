@@ -7,6 +7,8 @@ import Table from "./components/Table";
 import { TableContextProvider } from "./context/tableContext";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Map from "./map/Map";
+import IndiaTableData from "./components/india/IndiaTableData";
+import { IndianDataprovider } from "./context/ IndiaDataContext";
 function App() {
   return (
     <div>
@@ -19,9 +21,13 @@ function App() {
               <Precautions />
             </Route>
 
-            {/* <Route exact path="/" /> */}
             <Route exact path="/map" component={Map} />
-            <Route exact path="/india" component={Chart} />
+            <IndianDataprovider>
+              <Route exact path="/india">
+                <Chart />
+                <IndiaTableData />
+              </Route>
+            </IndianDataprovider>
           </Switch>
         </BrowserRouter>
       </TableContextProvider>

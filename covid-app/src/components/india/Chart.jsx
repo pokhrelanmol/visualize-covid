@@ -5,7 +5,7 @@ import useChartData from "./useChartData";
 const Chart = () => {
   const { data } = useChartData();
   return (
-    <div className="w-1/2 mx-auto">
+    <div className="w-1/2  mt-12 mx-auto">
       <Bar
         data={{
           labels: ["Confirmed", "deaths", "recovered", "active"],

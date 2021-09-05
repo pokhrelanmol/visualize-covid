@@ -11,7 +11,7 @@ const Card = ({ ApiData }) => {
       <>
         <h1 className="text-center mt-5 "> Live Covid Data Of the World</h1>
         <hr />
-        <div className="container min-w-full   flex justify-center pt-8 gap-8 flex-wrap ">
+        <div className="container min-w-full flex justify-center pt-8 gap-8 flex-wrap ">
           <Tilt
             className="Tilt"
             options={{ max: 25 }}
